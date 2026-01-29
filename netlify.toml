@@ -1,0 +1,11 @@
+[build]
+  # ビルドコマンドを無効化（静的HTMLなので不要）
+  command = "echo 'Static site, no build needed'"
+  # 公開ディレクトリをルートに設定
+  publish = "."
+
+[[redirects]]
+  # SPA風のルーティング（必要に応じて）
+  from = "/*"
+  to = "/index.html"
+  status = 200
